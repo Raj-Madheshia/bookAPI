@@ -1,59 +1,84 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# BookAPI Creation
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## Title's of Book
+insert into title values(101,'Datastructure');
+insert into title values(102,'Maths-3');
+insert into title values(103,'Logic-Design');
+insert into title values(104,'DBMS');
+insert into title values(105,'CommunicationSkill');
+insert into title values(106,'Java');
 
-## About Laravel
+## Publisher's
+insert into publisher values(201,'Khanna Publication');        ------- maths
+insert into publisher values(202,'Jhon Wiley');				         ------- maths
+insert into publisher values(203,'Mcgraw hill');			         ------- maths,Logic design,dbms,communicationskill,java
+insert into publisher values(204,'PHI');					             -------logic_design
+insert into publisher values(205,'Wiley publication');		     -------logic_design,communicationskill
+insert into publisher values(206,'Pearson'); 			             ------data structure,dbms
+insert into publisher values(207,'Oxford');				             ------data structure
+insert into publisher values(208,'Dreamtexh press');		        -------java
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Edition
+insert into edition value(301,'Maths-3',38);
+insert into edition value(302,'Maths-3',9);
+insert into edition value(303,'Maths-3',8);
+insert into edition value(304,'Logic-Design',4);
+insert into edition value(305,'Logic-Design',3);
+insert into edition value(306,'Logic-Design',7);
+insert into edition value(307,'Datastructure',8);
+insert into edition value(308,'Datastructure',9);
+insert into edition value(309,'DBMS',6);
+insert into edition value(310,'DBMS',6);
+insert into edition value(311,'CommunicationSkill',3);
+insert into edition value(312,'CommunicationSkill',6);
+insert into edition value(313,'Java',5);
+insert into edition value(314,'Java',6);
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+## Author's
+insert into author values(401,'Grewal');
+insert into author values(402,'Kreyszig');
+insert into author values(403,'Jain');
+insert into author values(404,'RP Jain');
+insert into author values(405,'Robert');
+insert into author values(406,'J.Bhasker');
+insert into author values(407,'Tenenbaum');
+insert into author values(408,'Remma Thareja');
+insert into author values(409,'Korth');
+insert into author values(410,'Narvathe');
+insert into author values(411,'Simon');
+insert into author values(412,'Herbert');
+insert into author values(413,'Herbert Scgildt');
+insert into author values(414,'D.T');
 
-## Learning Laravel
+## Book's
+insert into book values(501,102,201,301,501);
+insert into book values(502,102,202,302,502);
+insert into book values(503,102,203,303,503);
+insert into book values(504,103,203,304,504);
+insert into book values(505,103,204,305,505);
+insert into book values(506,103,205,306,506);
+insert into book values(507,101,206,307,507);
+insert into book values(508,101,207,308,508);
+insert into book values(509,104,203,309,509);
+insert into book values(510,104,206,310,510);
+insert into book values(511,105,203,311,511);
+insert into book values(512,105,205,312,512);
+insert into book values(513,106,203,313,513);
+insert into book values(514,106,208,314,514);
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
-
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Pulse Storm](http://www.pulsestorm.net/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Book Author's
+insert into book_author values(601,501,401);
+insert into book_author values(602,502,402);
+insert into book_author values(603,503,403);
+insert into book_author values(604,504,404);
+insert into book_author values(605,505,405);
+insert into book_author values(606,506,406);
+insert into book_author values(607,507,407);
+insert into book_author values(608,508,408);
+insert into book_author values(609,509,409);
+insert into book_author values(610,510,410);
+insert into book_author values(611,511,411);
+insert into book_author values(612,512,412);
+insert into book_author values(613,513,413);
+insert into book_author values(614,514,414);
